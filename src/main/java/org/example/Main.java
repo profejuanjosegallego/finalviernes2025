@@ -13,6 +13,16 @@ public class Main {
         // Consola H2 en http://localhost:8082
         Server.createWebServer("-webAllowOthers", "-webPort", "8082").start();
 
+        //Activando la conexion y creando las tablas
+        ConexionBD conexion = new ConexionBD();
+        conexion.crear_tabla_estudiante();
+
+
+        //pedir datos
+        //scanner
+
+
+
 
     }
 }
